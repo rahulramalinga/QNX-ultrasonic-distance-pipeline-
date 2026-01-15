@@ -45,4 +45,5 @@ deterministic execution and clean separation of responsibilities.
 
 ## Timing & Distance Calculation
 Distance is calculated using the standard ultrasonic ranging formula:
+Distance = (Time_of_Flight × Speed_of_Sound) / 2
 
