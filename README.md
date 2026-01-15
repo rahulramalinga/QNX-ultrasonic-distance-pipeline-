@@ -47,3 +47,55 @@ deterministic execution and clean separation of responsibilities.
 Distance is calculated using the standard ultrasonic ranging formula:
 Distance = (Time_of_Flight × Speed_of_Sound) / 2
 
+
+
+- Speed of sound assumed: **34300 cm/s (at 25°C)**
+- Echo timing captured using:
+  - `ClockCycles()`
+  - `clock_gettime(CLOCK_MONOTONIC, ...)`
+
+`ClockCycles()` is preferred when cycle-level accuracy is required.
+
+---
+
+## Hardware & Software
+
+### Hardware
+- Raspberry Pi 4
+- HC-SR04 Ultrasonic Sensor
+- Breadboard and jumper wires
+- Ethernet connection to host PC
+
+### Software
+- QNX Neutrino RTOS
+- QNX Momentics IDE
+- C (POSIX + QNX native APIs)
+
+---
+
+---
+
+## Key RTOS Concepts Demonstrated
+- Microkernel-based RTOS design
+- Priority-aware multithreading
+- Deterministic interprocess communication
+- Hardware abstraction layer (HAL)
+- Low-jitter timing suitable for control systems
+
+---
+
+## Future Enhancements
+- Assign thread priorities and CPU affinities
+- Add watchdog monitoring
+- Support multiple sensors
+- Publish data over network (UDP/TCP)
+- Integrate with QNX resource manager
+
+---
+
+## Author
+Rahul R  
+Electronics & Communication Engineering  
+RTOS | Embedded Systems | Hardware–Software Interface
+
+
